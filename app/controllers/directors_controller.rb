@@ -5,7 +5,7 @@ class DirectorsController < ApplicationController
 
   def show
     @directors = Director.find(params[:id])
-    render "show_details.html.erb"
+    render "show"
   end
 
   def new_form
